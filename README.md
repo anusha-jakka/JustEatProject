@@ -39,5 +39,12 @@ Just eat is UK's leader in online food order and delivery service provider.It pr
    After download, run the installer and follow the wizard steps.
    
    After installation, open intellij. 
+   
+ ######4.Install Git
+   Click on the link https://git-scm.com/download/win and download   
+   git for windows setup
+   
+   Run the installer
+   
       
     
