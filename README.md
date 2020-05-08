@@ -46,5 +46,56 @@ Just eat is UK's leader in online food order and delivery service provider.It pr
    
    Run the installer
    
-      
+ ######5. Clone/download the project
+   Navigate to the repository https://github.com/anusha-jakka/JustEatProject
+   
+   Click on clone or download and copy the url
+   
+   Create a folder in your local
+   
+   Inside the folder ,right click and select git bash
+   
+   write the command:
+   git clone "paste the repository url" and click on enter
+   
+   The entire project is cloned.
+   
+  ######6. Import the project to intellij
+   Open Intellij
+   
+   Click on File>open>select the project location clone before
+   
+   Click on ok
+   
+   Allow all the dependencies to import
+   
+#####Running the tests
+
+   1.Navigate to src/main/java/Runner/TestRunner.java 
+   
+   2.On the top right panel.Click on the drop down.click on Edit configurations and ensure below configurations are set:
+   On the left panel click on junit 
+   Add the configuration:
+   class: Runner.TestRunner
+   classpath of module: JustEat
+   JRE: Default
+   Click on Apply
+   
+   3.Run the Test by clicking on the Green triangle(Run: TestRunner) on the top right panel..
+   
+   4.After execution the results are displayed in the console section.
+   
+   5.Also the Cucumber reports are generated in the path target/cucumber-reports
+   
+#####Built With
+
+BDD style Cucumber framework using selenium and java
+
+Maven is used for dependency management
+
+#####Author
+Anusha Jakka 
+
+    
+    
     
