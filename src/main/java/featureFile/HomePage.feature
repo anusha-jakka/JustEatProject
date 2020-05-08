@@ -16,6 +16,8 @@ Feature: Use the website to find restaurants
     Then The user has logged in to Just eat
     When The user enters the area code "AR51 1AA" in the search bar
     Then The user is navigated to restaurant listing page
+    When The user clicks on the first restaurant
+    Then The user is navigated to the restaurant detail page
     And Close the browser
    Examples:
      |email  |password|

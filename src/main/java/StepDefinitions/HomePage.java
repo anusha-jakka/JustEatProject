@@ -34,6 +34,7 @@ public class HomePage {
     By recaptcha = By.id("recaptcha-anchor-label");
     By recaptchaCheckbox = By.id("recaptcha-anchor");
 //    By recaptchaVerify = By.id("recaptcha-verify-button");
+    By firstRestaurant = By.cssSelector(".c-listing-item-title");
 
     @Given("Browser is launched")
     public void lauchBrowser() {
@@ -104,5 +105,11 @@ public class HomePage {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(userAccount));
         Assert.assertTrue(driver.findElement(userAccount).isDisplayed());
+    }
+
+    @When("The user clicks on the first restaurant")
+    public void theUserClicksOnTheFirstRestaurant() {
+        driver.findElement(firstRestaurant).click();
+
     }
 }
